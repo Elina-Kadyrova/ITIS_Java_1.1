@@ -1,0 +1,20 @@
+StringIntDictionary dictionary1 = new StringIntDictionary();
+        dictionary1.add("q", 56);
+        dictionary1.add("w", 13);
+        dictionary1.add("e", 24);
+        dictionary1.add("r", 78);
+        System.out.println(dictionary1.toString());
+        dictionary1.set("q", 13);
+        System.out.println(dictionary1.toString());
+        System.out.println(dictionary1.get("r"));
+        System.out.println(dictionary1.getKey(78));
+        System.out.println(dictionary1.size());
+        dictionary1.remove("w");
+        System.out.println(dictionary1.toString());
+
+        StringIntDictionary dictionary2 = new StringIntDictionary();
+        dictionary2.add("y", 70);
+        dictionary2.add("w", 37);
+        dictionary2.add("l", 51);
+        System.out.println(dictionary2.toString());
+        System.out.println(((dictionary2.merge(dictionary1)).toString()));
